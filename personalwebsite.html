@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src=C:\Users\HP\Downloads\poto.png.jpeg height="120px" width="120px" class="logo"
+            style="border-radius:50%"alt="">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Fresher</p>
+            <h1>Hi,I'm <span>Shalini</span><br> Pal From Lucknow</h1>
+        </div>
+    </div>
+</div> 
+<!------------about------------>    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\HP\Downloads\shaluuuu.jpg"/> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" align="left">About Me</h1>
+                <p>My name is Shalini Pal 1 year work experience in TATA motors pvt.ltd.worked on 
+                    SAP system and provide required MIS repor </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul align="left">                        
+                        <li><span>Java</span><br>Begining</li>
+                        <li><span>HTML5</span><br>Begining</li>
+                        <li><span>CSS3</span><br>Begining</li>
+                        <li><span>JavaScript</span><br>Begining</li>                                                                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul align="left">
+                        <li><span>2023</span><br>Summer Training at Digipodium</li>
+                        <li><span>2021</span><br>Job Trainee based At TATA motors pvt.ltd Worked on PPC Dept.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul align="left">
+                        <li><span>Pursuing</span><br>BCA From Lal bahdur shastri girls college of Management</li>
+                        <li><span>2021</span><br>Intermediate From S C bose Academy Inter College</li>
+                        <li><span>2016</span><br>High school From Brilliant Convent School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------projects---->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title" align="left">My project</h1>
+        <div class="project-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>🕸️Financial Portfolio Analysis</h2>
+                <p>A portfolio is a collection of financial<br>
+                    investments like stocks,bonds,commodities,cash<br>
+                     equivalents,including closed-end funds and exchange
+                     traded funds.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-crop"></i> 
+                <h2>🕸️Personal Portfolio Website</h2>
+                <p>Digital space where individuals showcase<br>
+                    their works,skills,and accomplishment to <br>
+                    potential employers,clients,or anyone interested<br>
+                    in learning more about them.</p>
+                <a href="#Learn more">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>🧮BMI Calculator</h2>
+                <p> Measure body fat based on height <br>and weight that applies<br>
+                     to adult men and women.<br>
+                 </p>
+                <a href="#Learn more">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <div class="contact-right">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p>✉️shalupal804@gmail.com</p>
+                <p>☎️8429695280</p>
+                <div class="social-icons">
+                    <p>📧Linkdln
+                    <a hraf="https://www.linkedin.com/in/shalini-pal-91b6b0280?trk=contact-info"></a>
+                    </p><br>
+                </div>
+                <a href="file:///C:/Users/HP/Downloads/Shalini's%20Resume%20(1).pdf" class="btn btn2">Download Cv</a>
+            </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+            </div>
+    </div>
+</div>
+<!----------Github----->
+<div id="github">
+    <div class="container">
+        <h1 class="sub-title">Github</h1>
+            <p  class="btn btn2" align="right"><a href="https://github.com/Shalinipal19">GitHub Repository</a></p>
+        </div> 
+<div class="copyright">
+    <p>Copyright © Shalini.Made with🩷 by Easy Tutorials</p>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
